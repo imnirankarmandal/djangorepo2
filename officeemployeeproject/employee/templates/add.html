@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .f-1{
+                width: 600px;
+                height: 500px;
+                border: 2px solid red;
+                padding-top: 10px;
+                margin-left: 400px;
+                text-align: center;
+                background: rgb(100, 180, 180);
+            }
+            .f-1 .btn{
+                background: DodgerBlue;
+                color:white;
+                width: 200px;
+                height: 40px; 
+                font-weight: 600;
+                font-size: 25px;
+            }
+            .f-1 .btn:hover{
+                background: rgb(0, 0, 255);
+                border: none;
+            }
+            .f-1 input{
+                width: 250px;
+                height: 25px;
+                border-radius: 8px;
+                
+                padding-left: 10px;
+                border: none;
+            }
+            .f-1 h1{
+                color: red;
+            }
+            .f-1 hr{
+                height: 5px;
+                background: gray;
+            }
+        
+        </style>
+
+    </head>
+    <body>
+        <form method="post" class="f-1">
+            <h1>Add Employee</h1><hr>
+            {{form.as_p}}
+            {% csrf_token %}
+            <input class="btn" type='submit' value="Add Employee">
+        </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
